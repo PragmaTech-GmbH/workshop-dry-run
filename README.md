@@ -1,4 +1,4 @@
-# Workshop Dry Run - Verify Your Setup
+# Workshop Dry Run - Verify Your Setup ✅
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/PragmaTech-GmbH/workshop-dry-run)
 
