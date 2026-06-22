@@ -16,9 +16,9 @@ Its only job is to exercise the four tools we rely on during the workshop and te
 ## Prerequisites
 
 - **Java 25** (`java -version` should report 25)
-- **Docker** running locally (`docker ps` should succeed) — required for Testcontainers
+- **Docker** running locally (`docker ps` should succeed) - required for Testcontainers
 - An IDE (IntelliJ IDEA, VS Code, …) is helpful but not required
-- No global Maven needed — the project ships with the Maven wrapper (`./mvnw`)
+- No global Maven needed - the project ships with the Maven wrapper (`./mvnw`)
 
 ## The one command that proves everything
 
@@ -45,12 +45,12 @@ setup:
 
 | Test                       | Verifies                          | If it fails, check…                                  |
 |----------------------------|-----------------------------------|------------------------------------------------------|
-| `OpenLibraryWireMockIT`    | WireMock                          | Nothing Docker-related — a free local port for WireMock |
+| `OpenLibraryWireMockIT`    | WireMock                          | Nothing Docker-related - a free local port for WireMock |
 | `PostgresPersistenceIT`    | Docker + Testcontainers (Postgres) | Docker is running; `postgres:16-alpine` can be pulled |
 | `KeycloakAuthenticationIT` | Docker + Testcontainers (Keycloak) | Docker is running; `quay.io/keycloak/keycloak:26.3` can be pulled |
 | `MailNotificationIT`       | Docker + Testcontainers (Mailpit)  | Docker is running; `axllent/mailpit:v1.20` can be pulled |
 
-A common first failure is **Docker not running** — all three container-backed tests fail with a
+A common first failure is **Docker not running** - all three container-backed tests fail with a
 Docker connection error. Start Docker Desktop (or your daemon) and re-run.
 
 ## No local Docker? Use GitHub Codespaces
